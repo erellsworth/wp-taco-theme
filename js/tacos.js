@@ -6,7 +6,6 @@
 		var menu_id = $(this).data('menu-id');
 		var menu = $('#' + menu_id);
 		
-
 		if(expanded){
 			$(this).data('expanded', false);
 			menu.removeClass('expanded');

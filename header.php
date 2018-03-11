@@ -24,8 +24,8 @@
 
 <body <?php body_class(); ?>>
 <div id="tortilla" class="site">
-	<header id="masthead" class="site-header shredded_cheese" role="banner">
-
+	<header id="masthead" class="site-header shredded_cheese row top-xs end-xs" role="banner">
+		
 		<?php if ( has_nav_menu( 'top' ) ) : ?>
 			<div class="navigation-top">
 				<div class="wrap">
@@ -34,6 +34,7 @@
 			</div><!-- .navigation-top -->
 		<?php endif; ?>
 
-		<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-
+		<div class="col-xs">
+			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+		</div>
 	</header><!-- #masthead -->
