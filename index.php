@@ -18,6 +18,15 @@
 get_header(); ?>
 
 <div class="shredded_cheese">
+	<?php
+	if ( have_posts() ) {
+
+		/* Start the Loop */
+		while ( have_posts() ){ the_post(); ?>
+			<h3><?php the_title(); ?></h3>
+		<?php } 
+	}
+	?> 
 </div><!-- .shredded_cheese -->
 
 <?php get_footer();
