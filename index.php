@@ -17,13 +17,28 @@
 
 get_header(); ?>
 
-<div class="shredded_cheese">
+<div class="shredded_cheese row">
 	<?php
 	if ( have_posts() ) {
-
 		/* Start the Loop */
 		while ( have_posts() ){ the_post(); ?>
-			<h3><?php the_title(); ?></h3>
+			<div class="col-xs-12 col-md-6 col-lg-4">
+				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+					<header class="entry-header">
+						<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+					</header>
+					<?php if ( '' !== get_the_post_thumbnail()){ ?>
+						<div class="post-thumbnail">
+							<a href="<?php the_permalink(); ?>">
+								<?php the_post_thumbnail( 'medium' ); ?>
+							</a>
+						</div><!-- .post-thumbnail -->
+					<?php } ?>					
+					<div class="entry-summary">
+						<?php the_excerpt(); ?>
+					</div><!-- .entry-summary -->
+				</article>
+			</div>
 		<?php } 
 	}
 	?> 

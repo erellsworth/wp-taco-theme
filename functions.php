@@ -22,9 +22,11 @@ add_action( 'after_setup_theme', 'taco_setup' );
 function wp_taco_scripts(){
 	//fonts
 	wp_enqueue_style( 'font_awesome', 'https://use.fontawesome.com/releases/v5.0.8/css/all.css' );
+	//see https://fontawesome.com for usage
 	wp_enqueue_style( 'google_fonts', 'https://fonts.googleapis.com/css?family=Amaranth|Lobster+Two:400,400i,700,700i' );
 	
 	//flex grid
+	//see http://flexboxgrid.com/ for usage
 	wp_enqueue_style( 'flexboxgrid', '//cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css' );
 
 	// Theme stylesheet.
