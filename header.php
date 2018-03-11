@@ -24,12 +24,12 @@
 
 <body <?php body_class(); ?>>
 <div id="tortilla" class="site">
-	<header id="masthead" class="site-header" role="banner">
+	<header id="masthead" class="site-header shredded_cheese" role="banner">
 
 		<?php if ( has_nav_menu( 'top' ) ) : ?>
 			<div class="navigation-top">
 				<div class="wrap">
-					<?php //get_template_part( 'template-parts/navigation/navigation', 'top' ); ?>
+					<?php get_template_part( 'partials/top-nav' ); ?>
 				</div><!-- .wrap -->
 			</div><!-- .navigation-top -->
 		<?php endif; ?>
