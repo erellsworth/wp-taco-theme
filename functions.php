@@ -37,3 +37,10 @@ function wp_taco_scripts(){
 }
 
 add_action( 'wp_enqueue_scripts', 'wp_taco_scripts' );
+
+// Replaces the excerpt "Read More" text by a link
+function new_excerpt_more($more) {
+       global $post;
+	return ' <a class="moretag" href="'. get_permalink($post->ID) . '">...Read more</a>';
+}
+add_filter('excerpt_more', 'new_excerpt_more');
