@@ -325,7 +325,8 @@ template {
 	margin-left: 1.5em;
 }
 
-.aligncenter {
+.aligncenter,
+.alignnone {
 	clear: both;
 	display: block;
 	margin-left: auto;
@@ -404,6 +405,19 @@ a{
 	text-decoration: none;
 }
 
+blockquote{
+	font-style: italic;
+	line-height: 2;
+}
+
+blockquote:after{
+	display: block;
+	content:'';
+    width: 110%;
+    border-bottom: 1px dashed #ccc;
+    position: relative;
+    right: 5%
+}
 /*--------------------------------------------------------------
 6.0 Layout
 --------------------------------------------------------------*/
@@ -417,6 +431,10 @@ a{
 	width: 48em;
 	margin: 0 auto;
 	padding: 1.5em;
+}
+
+img{
+	max-width: 100%;
 }
 
 /*--------------------------------------------------------------
