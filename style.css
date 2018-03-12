@@ -19,6 +19,10 @@ Tags: taco, tacos, responsive
 3.0 Alignments
 4.0 Clearings
 5.0 Typography
+6.0 Layout
+7.0 Navigation
+8.0 Grid
+9.0 Colors
 
 --------------------------------------------------------------*/
 
@@ -389,7 +393,6 @@ template {
 --------------------------------------------------------------*/
 
 body{
-	color: #333;
 	font-family: 'Nunito', Futura, "Trebuchet MS", Arial, sans-serif;
 	font-size: 1.5em;
 	font-weight: 400;
@@ -420,13 +423,12 @@ blockquote:after{
 	display: block;
 	content:'';
     width: 110%;
-    border-bottom: 1px dashed #ccc;
+    border-bottom: 0.5vw dashed #fff;
     position: relative;
     right: 5%
 }
 
 code{
-    background: rgba(1,1,1,0.1);
     display: block;
     padding: 1vw;	
     white-space: pre;
@@ -481,3 +483,51 @@ img{
 .row h1{
 	margin: 0;
 }
+
+/*--------------------------------------------------------------
+9.0 Colors
+--------------------------------------------------------------*/
+
+code{
+	background: rgba(255,255,255,0.5);
+}
+
+.hot-sauce{
+	background: #c91919;
+}
+
+h1, h2, h3, h4, h5, h6,
+.hot-sauce-text{
+	color:#c91919;
+}
+
+.tortilla,
+#tortilla{
+	background: #f6c95c;
+}
+
+.tortilla-text{
+	color:#f6c95c;
+}
+
+.guacamole{
+	background: #41a332;
+}
+
+a,
+.guacamole-text{
+	color: #41a332;
+}
+
+.purple{
+	background: #93278f;
+}
+.purple-text{
+	color: #93278f;
+}
+
+/*#f6c95c	(246,201,92)
+#e7af00	(231,175,0)
+
+#41a332	(65,163,50)
+#983d00	(152,61,0)*/
