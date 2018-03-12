@@ -8,9 +8,11 @@
 		
 		if(expanded){
 			$(this).data('expanded', false);
+			$(this).attr('data-expanded', 'false');
 			menu.removeClass('expanded');
 		} else {
 			$(this).data('expanded', true);
+			$(this).attr('data-expanded', 'true');
 			menu.addClass('expanded');
 		}
 	});

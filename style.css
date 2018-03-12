@@ -467,6 +467,16 @@ img{
 /*--------------------------------------------------------------
 7.0 Navigation
 --------------------------------------------------------------*/
+.menu-toggle[data-expanded="true"]{
+	transform: rotate(90deg);
+}
+
+ul.menu,
+ul.menu ul{
+	margin: 0;
+	list-style-type: none;
+}
+
 #top-menu{
 	display: none;
     position: absolute;
@@ -512,6 +522,10 @@ h1, h2, h3, h4, h5, h6,
 	color:#f6c95c;
 }
 
+button,
+[type="button"],
+[type="reset"],
+[type="submit"],
 .guacamole{
 	background: #41a332;
 }
@@ -527,6 +541,12 @@ a,
 .purple-text{
 	color: #93278f;
 }
+
+input,
+textarea{
+	background: rgba(255,255,255,0.5);
+}
+
 
 /*#f6c95c	(246,201,92)
 #e7af00	(231,175,0)
@@ -593,5 +613,12 @@ label{
 input,
 textarea{
 	width: 95%;
-	background: rgba(255,255,255,0.5);
+}
+
+button,
+input,
+[type="button"],
+[type="reset"],
+[type="submit"]{
+	border:none;
 }
