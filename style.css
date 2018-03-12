@@ -425,6 +425,19 @@ blockquote:after{
     right: 5%
 }
 
+code{
+    background: rgba(1,1,1,0.1);
+    display: block;
+    padding: 1vw;	
+    white-space: pre;
+    overflow-x: auto;
+    border-radius: 0.25vw;
+}
+
+code br{
+	display: none;
+}
+
 pre{
 	overflow-x: auto;
 }
